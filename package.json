@@ -1,0 +1,37 @@
+{
+  "name": "claude-obsidian-sync",
+  "version": "1.0.0",
+  "description": "将 Claude Code 对话上下文同步到 Obsidian 的独立工具",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:hooks": "tsc -p tsconfig.hooks.json",
+    "build:all": "npm run build && npm run build:hooks",
+    "install-hooks": "node dist/hooks/install.js",
+    "dev": "tsc --watch",
+    "test": "bun test",
+    "clean": "rm -rf dist"
+  },
+  "bin": {
+    "obsidian-sync-hook": "./dist/hooks/sync-hook.js",
+    "obsidian-sync-install": "./dist/hooks/install.js"
+  },
+  "keywords": [
+    "claude",
+    "obsidian",
+    "sync",
+    "memory",
+    "context"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
