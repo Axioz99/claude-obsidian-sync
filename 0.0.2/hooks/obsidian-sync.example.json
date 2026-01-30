@@ -1,0 +1,8 @@
+{
+  "vaultPath": "D:/MyObsidianVault",
+  "baseFolder": "ClaudeCode",
+  "syncObservations": true,
+  "syncSummaries": true,
+  "trackedTools": ["Edit", "Write", "Bash"],
+  "logLevel": "info"
+}
